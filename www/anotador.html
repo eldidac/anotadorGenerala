@@ -1,0 +1,186 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax.  -->
+<div class="page" data-name="anotador">
+    <div class="navbar">
+        <div class="navbar-bg"></div>
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="link back">
+                    <i class="icon icon-back"></i>
+                    <span class="ios-only">Back</span>
+                </a>
+            </div>
+            <div class="title">Anotador de Generala</div>
+        </div>
+    </div>
+
+
+ 
+    <div class="page-content">
+        <div class="block ">
+
+            <h2 class="titlepunt">Pulsa en el cuadro y anota tu puntaje:</h2>
+
+            <div class="block grid-resizable-demo">
+                <div class="row">
+
+                    <div class="col resizable" style="min-width: 20px">
+                        <div class="puntajes">
+                            
+                            <p class="punt">UNO</p>
+                            <p class="punt">DOS</p>
+                            <p class="punt">TRES</p>
+                            <p class="punt">CUATRO</p>
+                            <p class="punt">CINCO</p>
+                            <p class="punt">SEIS</p>
+                            <p class="punt">ESCALERA</p>
+                            <p class="punt">FULL</p>
+                            <p class="punt">POKER</p>
+                            <p class="punt">GENERALA</p>
+                            <p class="punt">D GENERALA</p>
+                            <p class="punt">TOTAL</p>
+                        </div>
+
+                        <span class="resize-handler"></span>
+                    </div>
+
+                    <div class="col resizable" style="min-width: 20px">
+                        <div>
+                        <input type="text" name="jug1" id="jug1" class="jugador1">
+                        </div>
+
+                        <div class="col resizable colJug1" style="min-width: 20px">
+                            <input type="button" id="j1-1" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor btj1">
+                            <input type="button" id="j1-2" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor btj1">
+                            <input type="button" id="j1-3" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor btj1">
+                            <input type="button" id="j1-4" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor btj1">
+                            <input type="button" id="j1-5" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor btj1">
+                            <input type="button" id="j1-6" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor btj1">
+                            <input type="button" id="j1-7" value="" data-popup=".my-popup-fig" class="popup-open btnIngresaValor btj1">
+                            <input type="button" id="j1-8" value="" data-popup=".my-popup-fig" class="popup-open btnIngresaValor btj1">
+                            <input type="button" id="j1-9" value="" data-popup=".my-popup-fig" class="popup-open btnIngresaValor btj1">
+                            <input type="button" id="j1-10" value="" data-popup=".my-popup-fig" class="popup-open btnIngresaValor btj1">
+                            <input type="button" id="j1-11" value="" data-popup=".my-popup-fig" class="popup-open btnIngresaValor btj1">
+
+                            <div>
+                                <input type="text" name="totalJ1" id="totalJ1" value="0">
+                            </div>
+                        </div>
+                        <span class="resize-handler"></span>
+                    </div>
+
+                    <div class="col resizable" style="min-width: 20px">
+                        <div>
+                            <input type="text" name="jug2" id="jug2" class="jugador2">
+
+                            <div class="colJug2">
+                                <input type="button" id="j2-1" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor btj2">
+                                <input type="button" id="j2-2" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor btj2">
+                                <input type="button" id="j2-3" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor btj2">
+                                <input type="button" id="j2-4" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor btj2">
+                                <input type="button" id="j2-5" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor btj2">
+                                <input type="button" id="j2-6" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor btj2">
+                                <input type="button" id="j2-7" value="" data-popup=".my-popup-fig" class="popup-open btnIngresaValor btj2">
+                                <input type="button" id="j2-8" value="" data-popup=".my-popup-fig" class="popup-open btnIngresaValor btj2">
+                                <input type="button" id="j2-9" value="" data-popup=".my-popup-fig" class="popup-open btnIngresaValor btj2">
+                                <input type="button" id="j2-10" value="" data-popup=".my-popup-fig" class="popup-open btnIngresaValor btj2">
+                                <input type="button" id="j2-11" value="" data-popup=".my-popup-fig" class="popup-open btnIngresaValor btj2">
+
+                                <div>
+                                    <input type="text" name="totalJ2" id="totalJ2" value="0">
+                                </div>
+                            </div>
+                        </div>
+
+                        <span class="resize-handler"></span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <input type="button" value="Finalizar" data-popup=".my-popup-finalizar" class="popup-open btnLimpiaTermina button button-large button-fill botonInicio">
+            </div>
+                        
+            <!-- And somewhere in DOM -->
+            <div class="popup my-popup-nro">
+                <div class="view">
+                    <div class="page">
+                        <div class="navbar">
+                            <div class="navbar-bg"></div>
+                            <div class="navbar-inner">
+                                <div class="title">Ingresar puntaje</div>
+                                <div class="right">
+                                    <!-- Link to close popup -->
+                                    <a class="link popup-close">Cerrar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-content">
+                          <input type="button" value="" id="op1Dado" class="eligeAnotacion btnFinaliza button button-large button-fill">
+                          <input type="button" value="" id="op2Dado" class="eligeAnotacion btnFinaliza button button-large button-fill">
+                          <input type="button" value="" id="op3Dado" class="eligeAnotacion btnFinaliza button button-large button-fill">
+                          <input type="button" value="" id="op4Dado" class="eligeAnotacion btnFinaliza button button-large button-fill">
+                          <input type="button" value="" id="op5Dado" class="eligeAnotacion btnFinaliza button button-large button-fill">
+                          <input type="button" value="Tachar" id="opTachar" class="eligeAnotacion btnFinaliza button button-large button-fill">
+                          <input type="button" value="Cancelar" id="opCancelar" class="eligeAnotacion2 cancela btnFinaliza button button-large button-fill">
+                        <h1 id="avisoRepeticion"></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup my-popup-fig">
+                <div class="view">
+                    <div class="page">
+                        <div class="navbar">
+                            <div class="navbar-bg"></div>
+                            <div class="navbar-inner">
+                                <div class="title">Ingresar forma</div>
+                                <div class="right">
+                                    <!-- Link to close popup -->
+                                    <a class="link popup-close">Cerrar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-content">
+                          <div class="popUpOpciones">
+                            <input type="button" value="Servida" id="opServida" class="eligeAnotacion  button button-large">
+                            <input type="button" value="No servida" id="opNoServida" class="eligeAnotacion  button button-large">
+                            <input type="button" value="Tachar" id="opTachar" class="eligeAnotacion  button button-large">
+                            <input type="button" value="Cancelar" id="opCancelar" class="eligeAnotacion2 cancela  button button-large">
+                            <div class="hidden">
+                                <h1 id="avisoRepeticion"></h1>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup my-popup-finalizar">
+                <div class="view">
+                    <div class="page">
+                        <div class="navbar">
+                            <div class="navbar-bg"></div>
+                            <div class="navbar-inner">
+                                <div class="title">Advertencia</div>
+                                <div class="right">
+                                    <!-- Link to close popup -->
+                                    <a class="link popup-close">Cerrar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-content">
+                            <h1 class="avisoLimpia">¿Seguro desea finalizar la partida? Presione LIMPIAR para borrar sólo los puntajes o TERMINAR para volver a comenzar.</h1>
+                            <input type="button" value="Limpiar" id="opLimpia" class="eligeAnotacion2 btnFinaliza button button-large button-fill  popupFin">
+                            <input type="button" value="Terminar" id="opTermina" class="eligeAnotacion2 btnFinaliza button button-large button-fill popupFin">
+                            <input type="button" value="Cancelar" id="opCancelar" class="eligeAnotacion2 cancela button button-large button-fill popupFin">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+

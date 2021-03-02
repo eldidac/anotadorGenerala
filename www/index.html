@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Color theme for statusbar -->
+    <!-- <meta name="theme-color" content="#2196f3"> -->
+    <meta name="color-scheme" content="light dark">
+
+    <!-- Your app title -->
+    <title>Anotador de Generala</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="lib/framework7/framework7-bundle.min.css">
+    <!-- Path to icons -->
+    <link rel="stylesheet" href="css/icons.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Statusbar overlay -->
+        <div class="statusbar"></div>
+    
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="index" class="page">
+    
+                <!-- Top Navbar -->
+                <div class="navbar">
+                    <div class="navbar-bg"></div>
+                    <div class="navbar-inner">
+                        <div class="title">Anotador de Generala</div>
+                    </div>
+                </div>
+        
+                <!--
+                // Toolbar
+                <div class="toolbar toolbar-bottom">
+                    <div class="toolbar-inner">
+                        <button class="col button button-fill" id="eliminarJugador">Quitar</button>
+                        
+                        <button class="col button button-fill" id="añadirJugador">Añadir</button>
+                      
+                    </div>
+                </div>
+                -->
+
+                <!-- Scrollable page content -->
+                <div class="page-content bg">
+
+
+                    <div class="block">
+                        <div class="columna1">
+
+                            <h1 class="title1">Bienvenido!</h1>
+                            <p class="subtitle1">Para empezar escriba los nombres de los jugadores:</p>
+                            
+                            <div class="list no-hairlines-md">
+                                <ul class="listaJugadores">
+
+                                  <li class="item-content item-input">
+                                    <div class="item-inner">
+                                      <div class="item-input-wrap">
+                                        <input type="text" id="jugador1" placeholder="Nombre jugador 1">
+                                        <span class="input-clear-button"></span>
+                                      </div>
+                                    </div>
+                                  </li>
+
+                                  <br>
+
+                                  <li class="item-content item-input">
+                                    <div class="item-inner">
+                                      <div class="item-input-wrap">
+                                        <input type="text" id="jugador2" placeholder="Nombre jugador 2">
+                                        <span class="input-clear-button"></span>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  
+                                  <br>
+
+                                </ul>
+
+                                <button class="button button-large button-fill botonInicio" id="iniciar">Iniciar</button>
+                            </div>
+                        </div>
+                    </div>
+                       
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/framework7-bundle.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>
